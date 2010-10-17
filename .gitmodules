@@ -1,0 +1,9 @@
+[submodule "vendor/xmlbuilder"]
+	path = vendor/xmlbuilder
+	url = http://github.com/btakita/xmlbuilder.js.git
+[submodule "vendor/node-xml2js"]
+	path = vendor/node-xml2js
+	url = git@github.com:lucisferre/node-xml2js.git
+[submodule "vendor/sax-js"]
+	path = vendor/sax-js
+	url = http://github.com/isaacs/sax-js.git
