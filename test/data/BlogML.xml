@@ -125,19 +125,19 @@ It does seem somewhat subjective though.  In the end I think the only person who
       <trackbacks />
     </post>
     <post id="55691388-79df-45e0-b20f-9a866a0fa05d" date-created="2010-08-28T14:43:33" date-modified="2010-08-28T14:43:33" approved="true" post-url="/post/2010/08/28/A-big-thank-you-to-TekPub.aspx" type="normal" hasexcerpt="false" views="0" is-published="True">
-      <title type="text"><![CDATA[A big thank you to TekPub]]></title>
-      <content type="text"><![CDATA[<p>If you have not heard of TekPub yet, I recommend you give it a whirl.&#160; <a href="http://www.tekpub.com/">TekPub</a> is a site with video learning for various software development technologies.&#160; Topics include MVC, nHibernate, Git, JQuery, Rails and more.</p>  <p>The videos are a great way to get started but they are also fairly in depth.&#160; Most series contain 8 or more videos so they are very good for taking your first deep dive into a particular technology.</p>  <p>TekPub also gives back by <a href="http://blog.tekpub.com/user-group-sponsorship/">sponsoring various user groups</a>, now including <a href="http://altnetvan.grou.ps">ALT.NET Vancouver</a>.&#160; They will be providing us with one-day subscription coupons which we will start to give away at monthly meet-ups and events.&#160; So on behalf of everyone who is a part of ALT.NET Vancouver I want to thank TekPub.</p>]]></content>
-      <post-name type="text"><![CDATA[A big thank you to TekPub]]></post-name>
-      <authors>
-        <author ref="chrisn" />
-      </authors>
-      <categories>
-        <category ref="05aa3b7e-5327-4ed2-8c05-ba7f9675b475" />
-      </categories>
-      <tags>
-        <tag ref="alt.net" />
-        <tag ref="tekpub" />
-      </tags>
+     <title type="text"><![CDATA[A big thank you to TekPub]]></title>
+     <content type="text"><![CDATA[<p>If you have not heard of TekPub yet, I recommend you give it a whirl.&#160; <a href="http://www.tekpub.com/">TekPub</a> is a site with video learning for various software development technologies.&#160; Topics include MVC, nHibernate, Git, JQuery, Rails and more.</p>  <p>The videos are a great way to get started but they are also fairly in depth.&#160; Most series contain 8 or more videos so they are very good for taking your first deep dive into a particular technology.</p>  <p>TekPub also gives back by <a href="http://blog.tekpub.com/user-group-sponsorship/">sponsoring various user groups</a>, now including <a href="http://altnetvan.grou.ps">ALT.NET Vancouver</a>.&#160; They will be providing us with one-day subscription coupons which we will start to give away at monthly meet-ups and events.&#160; So on behalf of everyone who is a part of ALT.NET Vancouver I want to thank TekPub.</p>]]></content>
+     <post-name type="text"><![CDATA[A big thank you to TekPub]]></post-name>
+     <authors>
+      <author ref="chrisn" />
+     </authors>
+     <categories>
+      <category ref="05aa3b7e-5327-4ed2-8c05-ba7f9675b475" />
+     </categories>
+     <tags>
+      <tag ref="alt.net" />
+      <tag ref="tekpub" />
+     </tags>
     </post>
     <post id="dbc166b0-3e4b-41ec-8bb8-0aae515bb883" date-created="2010-08-28T10:46:19" date-modified="2010-08-28T10:54:09" approved="true" post-url="/post/2010/08/28/Summere28099s-almost-over-ite28099s-conference-time.aspx" type="normal" hasexcerpt="false" views="0" is-published="True">
       <title type="text"><![CDATA[Summer's almost over, it's conference time]]></title>

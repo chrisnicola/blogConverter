@@ -7,3 +7,6 @@
 [submodule "vendor/sax-js"]
 	path = vendor/sax-js
 	url = http://github.com/isaacs/sax-js.git
+[submodule "vendor/normal-template"]
+	path = vendor/normal-template
+	url = http://github.com/gmosx/normal-template.git
