@@ -10,3 +10,9 @@
 [submodule "vendor/normal-template"]
 	path = vendor/normal-template
 	url = http://github.com/gmosx/normal-template.git
+[submodule "vendor/formidable"]
+	path = vendor/formidable
+	url = http://github.com/felixge/node-formidable.git
+[submodule "vendor/node-static"]
+	path = vendor/node-static
+	url = http://github.com/cloudhead/node-static.git
