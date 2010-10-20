@@ -4,7 +4,6 @@ var sys = require('sys'),
     http = require('http'),
     nstatic = require('node-static/lib/node-static'),
     url = require('url'),
-    utl = require('util'),
     converter = require('./lib/converter');
 
 function parse_multipart(req) {
