@@ -1,35 +1,60 @@
 require.paths.unshift(__dirname + '/vendor');
 var sys = require('sys'),
-    formidable = require('formidable'),
+    multipart = require('multipart'),
     http = require('http'),
     nstatic = require('node-static/lib/node-static'),
     url = require('url'),
     utl = require('util'),
-    convertor = require('./lib/convertor');
+    converter = require('./lib/converter');
 
+function parse_multipart(req) {
+    var parser = multipart.parser();
+    sys.log(sys.inspect(req.headers));
+    // Make parser use parsed request headers
+    parser.headers = req.headers;
+
+    // Add listeners to request, transfering data to parser
+
+    req.addListener("data", function(chunk) {
+        parser.write(chunk);
+    });
+
+    req.addListener("end", function() {
+        parser.close();
+    });
+
+    return parser;
+}
+
+/*
+ * Handle file upload
+ */
 function upload_file(req, res) {
-    var form = new formidable.IncomingForm()
-        , files = []
-        , fields = [];
-    
-    form.uploadDir = '/tmp';
-    form.on('field', function(field, value){
-        //p([field, value]);
-        fields.push([field, value]);
-    });
-    form.on('file', function (field, file) {
-        //p([field, file]);
-        files.push([fields, file]);
-    });
-    form.on('end', function(){
-        sys.log('Done');
-        res.writeHead(200, {'content-type': 'text/plain'});
-        res.write('testing');
-        res.end(sys.inspect({fields: fields, files: files}));
+    // Request body is binary
+    req.setEncoding('binary');
+    // Handle request as multipart
+    var stream = parse_multipart(req);
 
-    });
-    form.parse(req); 
-    return;
+    var data = '';
+
+    // Set handler for a request part received
+    stream.onPartBegin = function(part) {
+        sys.debug("Started part, name = " + part.name + ", filename = " + part.filename);
+    };
+
+    // Set handler for a request part body chunk received
+    stream.onData = function(chunk) {
+        data += chunk;
+    };
+
+    // Set handler for request completed
+    stream.onEnd = function() {
+        res.writeHead('200', {'Content-Type': 'text/plain'});
+        converter.convert(data, function(output){
+            res.write(output);
+            res.end();
+        });
+    };
 }
 
 var staticFiles = new nstatic.Server('./public', { cache: false });

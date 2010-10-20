@@ -6,10 +6,10 @@
 	<body>
 		<p>There isn't really much to this.  Upload your file and download the response.</p>
 		<p>I thinking of some way to use sockets to make this cooler... #wrongtoolforthejob</p>
-		<div id="upload">
-			<form action="/upload" method="post" enctype="mulipart/form-data">
-				<input type="file" name="upload" />
-				<input type="submit" name="submit" value="Upload">
+		<div>
+			<form name="upload" action="/upload" method="post" enctype="multipart/form-data">
+				<input type="file" name="upload-file" size="40">
+				<a href="javascript:document.upload.submit();">Convert</a>
 			</form>
 		</div>
 	</body>
