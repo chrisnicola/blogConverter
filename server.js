@@ -70,7 +70,7 @@ var server = http.createServer(function(req,res) {
     }
 });
 
-server.listen(81);
+server.listen(80);
 sys.log('Started...');
 
 
