@@ -2,7 +2,7 @@ require.paths.unshift(__dirname + '/vendor');
 var sys = require('sys'),
     multipart = require('multipart'),
     http = require('http'),
-    nstatic = require('node-static/lib/node-static'),
+    nstatic = require('node-static'),
     url = require('url'),
     converter = require('./lib/converter');
 
@@ -70,7 +70,7 @@ var server = http.createServer(function(req,res) {
     }
 });
 
-server.listen(80);
+server.listen(81);
 sys.log('Started...');
 
 
