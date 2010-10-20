@@ -66,7 +66,7 @@ var server = http.createServer(function(req,res) {
             upload_file(req, res);
             break;
         default:
-            staticFiles.serveFile('index.html', req, res);
+            staticFiles.serve(req, res);
     }
 });
 
