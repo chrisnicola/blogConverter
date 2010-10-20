@@ -56,7 +56,7 @@ function upload_file(req, res) {
     };
 }
 
-var staticFiles = new nstatic.Server('./public', { cache: false });
+var staticFiles = new nstatic.Server('./public/', { cache: 3600 });
 
 var server = http.createServer(function(req,res) {
     var location = url.parse(req.url, true);
@@ -66,7 +66,7 @@ var server = http.createServer(function(req,res) {
             upload_file(req, res);
             break;
         default:
-            staticFiles.serve(req, res);
+            staticFiles.serveFile('index.html', req, res);
     }
 });
 
