@@ -39,7 +39,7 @@
 		</wp:category>
 		{/:reduce}
 		{:r tags}
-		<wp:tag><wp:tag_slug>{=slug tag}</wp:tag_slug><wp:tag_name><![CDATA[{=slug tag}]]></wp:tag_name></wp:tag>
+		<wp:tag><wp:tag_slug>{=slug name}</wp:tag_slug><wp:tag_name><![CDATA[{=slug name}]]></wp:tag_name></wp:tag>
 		{/:r}
 		{:reduce posts.post}
 		<item>
